@@ -1,7 +1,7 @@
 'use strict';
 
 const fs = require('fs');
-const parseRDF = require('../lib/parse-rdf.js');
+const parseRDF = require('../databases/lib/parse-rdf.js');
 const expect = require('chai').expect;
 
 const rdf = fs.readFileSync(`${__dirname}/pg132.rdf`);

@@ -103,4 +103,4 @@ Y el código que cumple dicha prueba es el siguiente:
 `book.fuentes = $('dcterms\\:hasFormat pgterms\\:file').toArray().map(elem => $(elem).attr('rdf:about'));`
 
 
- [![Build Status](https://travis-ci.org/<DanielGlezExp>/<repo name>.svg?branch=master)](https://travis-ci.org/<github username>/<repo name>) [![Coverage Status](https://coveralls.io/repos/github/<github username>/<repo name>/badge.svg?branch=master)](https://coveralls.io/github/<github username>/<repo name>?branch=master)
+ [![Build Status](https://travis-ci.org/<DanielGlezExp>/<PL-testing>.svg?branch=master)](https://travis-ci.org/<DanielGlezExp>/<PL-testing>) [![Coverage Status](https://coveralls.io/repos/github/<DanielGlezExp>/<PL-testing>/badge.svg?branch=master)](https://coveralls.io/github/<DanielGlezExp>/<PL-testing>?branch=master)
