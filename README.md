@@ -17,3 +17,62 @@ TDD es definir las pruebas que debe pasar nuestro software antes de realizar el 
 
 Usaremos Mocha como test framework y Chai una librería para 'asserts'
 
+Nos enseña a instalar mocha usando npm y a realizar nuestro primer test.
+
+Instalacion mocha:
+
+![Instalacion Mocha]()
+
+Primer fallo test:
+
+![Primer fallo test]()
+
+¡Primer test superado!:
+
+![Primer test superado]()
+
+Además nos enseña a como crear un pequeño módulo, exportando una función desde un archivo lib/ a un archivo en test/
+
+Finalmente aprendemos y usamos Mocha junto a npm para poder hacer continuos testing. Es decir comprobar automáticamente si los tests se ejecutan correctamente al hacer cambios a los ficheros.
+
+Test continuo cuando todo está bien (muestra información mínima):
+
+![Mocha todo bien]()
+
+Test continuo nate un fallo:
+
+![Mocha fallo]()
+
+## Extracting Data from XML with Cheerio
+En el comienzo se nos habla de diferentes maneras de obtener información a partir de documentos XML (por tanto RDF) / HTML. Para ello se nos habla de herramientas basadas en DOM y herramientas SAX (Simple API for XML) La ventaja de SAX es que es más rápida y consume menos memoria, pero analiza un elemento cada vez y no mantiene la estructura general del fichero original. SAX nos comenta que es una buena opción para ficheros XML grandes.
+
+Por otro lado JSON-LD es un formato similar a JSON pero que permite, además, almacenar relaciones entre los diferentes componentes de un JSON.
+
+Nosotros para acceder información de un fichero RDF relativamente pequeño vamos a usar Cheerio. Cheerio es una APi jQuerry para trabajar con documentos HTML y XML
+
+Usando TDD con chai realizamos las pruebas que deseamos que nuestro código supere, para posteriormente usando cheerio escribimos el código necesario para acceder a la información deseada de los ficheros para superar las mismas
+
+Pruebas:
+
+![Pruebas acceder informacion]()
+
+![Código acceder información]()
+
+Finalmente realizamos un pequeño programa para obtener la información de un libro en formato JSON y mostrarla
+
+![Mostrar Json]()
+
+## Procesando ficheros de datos secuencialmente
+
+En este capítulo lo que hacemos es usar node-dir para ejecutar parseRDF en todos los ficheros que acaben en .rdf Para cada archivos mostramos su "index" con el que lo guardaríamos seguido de el objeto JSON del libro en si.
+
+Captura de la ejecución:
+
+![rdf to bulk]()
+
+Finalmente esta salida, una vez hemos comprobado que el programa funciona correctaente, la almacenamos en data/bulk_pg.ldj 
+
+Aqui puede ver el inicio del fichero
+
+![bulk_pglj]()
+
