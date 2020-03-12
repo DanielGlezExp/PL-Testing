@@ -90,6 +90,7 @@ Pero añadiendo el siguiente código conseguimos superar las pruebas:
 `book.lcc = $('[rdf\\:resource$="/LCC"]')
     .parent().find('rdf\\:value').text();`
 
+
 ### **Segundo ejercicio**
 Para el segundo ejercicio he realizado esta prueba:
 
