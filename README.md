@@ -1,3 +1,4 @@
+ [![Build Status](https://travis-ci.org/<DanielGlezExp>/<PL-testing>.svg?branch=master)](https://travis-ci.org/<DanielGlezExp>/<PL-testing>) [![Coverage Status](https://coveralls.io/repos/github/<DanielGlezExp>/<PL-testing>/badge.svg?branch=master)](https://coveralls.io/github/<DanielGlezExp>/<PL-testing>?branch=master)
 # P2-t1 Testing
 **Autor**: Daniel González Expósito
 
