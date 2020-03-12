@@ -29,5 +29,7 @@ it('should Parse RDF content', () => {
     .that.is.an('string');
   expect(book.lcc).to.match(/^[^IOWXY]/);
   expect(book.lcc).to.match(/^[A-Z]/);
-
+  expect(book).to.have.a.property('fuentes')
+    .that.is.an('array')
+    .and.contains('http://www.gutenberg.org/files/132/132-0.txt');
 });

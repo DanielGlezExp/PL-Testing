@@ -13,5 +13,6 @@ module.exports = rdf => {
     .toArray().map(elem => $(elem).text());
   book.lcc = $('[rdf\\:resource$="/LCC"]')
     .parent().find('rdf\\:value').text();
+  book.fuentes = $('dcterms\\:hasFormat pgterms\\:file').toArray().map(elem => $(elem).attr('rdf:about'));
   return book;
 };
