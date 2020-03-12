@@ -25,4 +25,7 @@ it('should Parse RDF content', () => {
     .that.is.an('array').with.lengthOf(2)
     .and.contains('Military art and science -- Early works to 1800')
     .and.contains('War -- Early works to 1800');
+  expect(book).to.have.a.property('lcc', /^[^IOWXY]/);
+  expect(book).to.have.a.property('lcc', /^[A-Z]/);
+
 });
